@@ -1,3 +1,3 @@
 import flwr as fl
 
-fl.server.start_server("localhost:8080", config={"num_rounds": 2})
+fl.server.start_server("localhost:8080", config={"num_rounds": 10})

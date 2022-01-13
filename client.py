@@ -36,7 +36,7 @@ class CifarClient(fl.client.NumPyClient):
         """
         print("Fitting the client model")
         self.set_parameters(parameters)
-        train(net, trainLoader, epochs=2, device=DEVICE)
+        train(net, trainLoader, epochs=10, device=DEVICE)
         return self.get_parameters(), len(trainLoader), {}
 
     def evaluate(self, parameters, config):
